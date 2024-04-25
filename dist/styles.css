@@ -121,6 +121,121 @@ p {
   }
 }
 
+/* 
+===================
+NAV Section
+=================== 
+*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 5px 80px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+nav .logo {
+  padding: 22px 20px;
+  height: 80px;
+  float: left;
+  font-size: 24px;
+  transition: 0.3s;
+}
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  line-height: 80px;
+  color: #151515;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+nav ul li a:focus {
+  outline: none;
+}
+nav ul li a.active {
+  background: #e247;
+  color: #fff;
+  border-radius: 6px;
+}
+nav.black {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100px;
+  padding: 10px 100px;
+}
+nav.black .logo {
+  color: #fff;
+}
+nav.black ul li a {
+  color: #fff;
+}
+nav ul li a.active {
+  background: #e247;
+  color: #fff;
+  border-radius: 6px;
+}
+
+/* 
+===================
+Hero Section
+=================== 
+*/
+.hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 255, 0.2),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://img.freepik.com/free-photo/technology-network-background-connection-cyber-space-ai-generative_123827-24187.jpg?w=826&t=st=1714084675~exp=1714085275~hmac=817d5c99bcf8b73aaac155d87a1a50d5dfbdeeaa77ff437080448f3ea4ea0595");
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  margin-top: 80px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  color: #fff;
+}
+
 /*
 =============== 
 Pagination
